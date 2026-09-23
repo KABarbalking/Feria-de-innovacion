@@ -20,7 +20,7 @@ Sitio web informativo desarrollado para la Feria de Innovación Tecnológica de 
 3. Buscar el archivo **`index.html`** en la carpeta principal.
 4. Hacer doble clic en el archivo `index.html` o abrirlo con cualquier navegador web para visualizar el sitio completo y navegar entre sus secciones.
 
-## Distribución de Responsabilidades
+## Distribución del trabajo
 * **Nicolas Olguin:** Creación de la estructura base del proyecto, configuración inicial del repositorio, desarrollo de la página de Inicio (`index.html`) y redacción del archivo README.md.
-* **???:** Desarrollo de la página de Proyectos (`proyectos.html`) y la página de Programa (`programa.html`).
+* **???:** Desarrollo de la página de Proyectos y la página de Programa.
 * **???:** Desarrollo de la página de Contacto e Inscripción (`contacto.html`), diseño de la hoja de estilos personalizada (`css/styles.css`).
