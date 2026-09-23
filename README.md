@@ -1,9 +1,9 @@
 # Feria de innovacion Tecnológica
 
 ## Integrantes del equipo
-*BASTIÁN RAVILET
-*NICOLAS OLGUÍN
-*SEBASTIÁN PÉREZ
+* BASTIÁN RAVILET
+* NICOLAS OLGUÍN
+* SEBASTIÁN PÉREZ
 
 ## Descripción del Sitio
 Sitio web informativo desarrollado para la Feria de Innovación Tecnológica de la institución. Cuenta con cuatro páginas principales orientadas a la presentación del evento, exhibición de proyectos tecnológicos, programación de actividades y un apartado de contacto e inscripción para los asistentes.
