@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Feria de Innovación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Feria<span>Innovación</span></div>
+    <nav class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="programa.html">Programa</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <section class="schedule-hero">
+      <h1>Contacto y Consultas</h1>
+      <p>Canal oficial para resolver dudas sobre exposiciones, stands y actividades del evento.</p>
+    </section>
+
+    <div class="contact-layout">
+      <section class="contact-info-card">
+        <h3>Información General</h3>
+        <p><strong>Lugar:</strong> Hall Central y Auditorio de Ingeniería</p>
+        <p><strong>Horario de atención:</strong> 09:00 a 17:30 hrs</p>
+        
+        <div class="contact-channels">
+          <div>
+            <span class="channel-label">Coordinación de Proyectos:</span>
+            <p>proyectos@feriainnovacion.cl</p>
+          </div>
+          <div>
+            <span class="channel-label">Cronograma y Charlas:</span>
+            <p>programa@feriainnovacion.cl</p>
+          </div>
+        </div>
+      </section>
+
+      <form class="contact-form-card" onsubmit="event.preventDefault();">
+        <h3>Envíanos un mensaje</h3>
+
+        <div class="field-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Constanza Morales" required>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="motivo">Motivo de consulta</label>
+          <select id="motivo" name="motivo">
+            <option value="stands">Duda sobre stands o prototipos</option>
+            <option value="cronograma">Consulta sobre horarios de charlas</option>
+            <option value="asistencia">Inscripción o asistencia general</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los detalles de tu consulta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Feria de Innovación Tecnológica. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
