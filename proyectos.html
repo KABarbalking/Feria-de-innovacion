@@ -3,30 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <title>Proyectos e Investigaciones - Feria de Innovación</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <!-- Navbar Oscuro UA -->
   <header class="site-header">
     <div class="header-inner">
-      <div class="site-logo">Logo</div>
+      <div class="site-logo">
+        <span class="badge-ua">UA</span>
+        InnovaTech 2026
+      </div>
       <nav class="site-nav">
         <a href="index.html">Inicio</a>
         <a href="proyectos.html" class="active">Proyectos</a>
-        <a href="#">Programa</a>
-        <a href="#">Contacto</a>
+        <a href="programa.html">Programa</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h1>Proyectos</h1>
-    <p>Estos son los proyectos destacados del sitio.</p>
-    <p>Se irán agregando más adelante con información detallada.</p>
+  <!-- Banner Superior -->
+  <section class="hero-banner">
+    <div class="hero-banner-inner">
+      <div class="breadcrumb-simple">Inicio &gt; Proyectos</div>
+      <h2>Investigaciones Tecnológicas</h2>
+      <p>Catálogo descriptivo de iniciativas y desarrollos aplicados de la sede Pedro de Valdivia</p>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal: 6 Cajas Independientes -->
+  <main class="container-proyectos">
+    <section class="grid-investigaciones">
+
+      <!-- Caja 1 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Internet de las Cosas & Agro</span>
+          <h3 class="box-title">AgroSense Mesh: Monitoreo Microclimático de Cultivos</h3>
+        </header>
+        <p class="box-summary">
+          Investigación orientada al diseño de nodos sensores de bajo coste energizados mediante paneles solares compactos. Los dispositivos capturan parámetros críticos como potencial hídrico del suelo, temperatura foliar y conductividad eléctrica, comunicándose mediante una topología mallada (LoRaWAN) para operar en zonas rurales sin cobertura móvil convencional.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Proyecto desarrollado ante la crisis hídrica de la zona central, logrando reducir en hasta un 32% el consumo de agua mediante ciclos de riego dosificados con precisión.</p>
+        </div>
+      </article>
+
+      <!-- Caja 2 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Robótica & Salud</span>
+          <h3 class="box-title">MediBot Rover: Logística Hospitalaria Autónoma</h3>
+        </header>
+        <p class="box-summary">
+          Diseño e integración de un vehículo terrestre autónomo destinado a la movilización interna de insumos clínicos, muestras biológicas y medicamentos dentro de recintos asistenciales. Emplea algoritmos de navegación SLAM y sensores LiDAR bidimensionales para esquivar personal y camillas en pasillos de alta congestión.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Surge como colaboración entre las carreras de Ingeniería y Enfermería para disminuir tiempos muertos del personal de salud y mitigar riesgos de contaminación biológica cruzada.</p>
+        </div>
+      </article>
+
+      <!-- Caja 3 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Visión por Computador & IA</span>
+          <h3 class="box-title">VisionGuard QA: Control de Calidad Industrial No Invasivo</h3>
+        </header>
+        <p class="box-summary">
+          Desarrollo de un modelo ligero de redes neuronales convolucionales implementado sobre hardware perimetral (Edge Computing). El sistema inspecciona piezas manufacturadas a una velocidad de 60 cuadros por segundo, identificando microfisuras, imperfecciones de soldadura o anomalías dimensionales que escapan al ojo humano.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Enfocado en apoyar la transformación digital de pequeñas y medianas maestranzas locales, sustituyendo etapas de descarte destructivo por auditorías ópticas en tiempo real.</p>
+        </div>
+      </article>
+
+      <!-- Caja 4 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Telemetría & Biomedicina</span>
+          <h3 class="box-title">CardioSync: Detección Temprana de Arritmias Ambulatorias</h3>
+        </header>
+        <p class="box-summary">
+          Plataforma de telemetría vestible que recopila señales electrocardiográficas continuas a través de parches cutáneos de gel conductor. Los datos se procesan localmente en un microcontrolador de ultrabajo consumo, el cual envía reportes cifrados a la nube únicamente cuando se detecta un patrón anómalo o taquicardia severa.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Creado para seguimiento de pacientes con patologías cardiovasculares en zonas aisladas, permitiendo al especialista médico recibir alertas antes de un episodio crítico.</p>
+        </div>
+      </article>
+
+      <!-- Caja 5 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Economía Circular & Energía</span>
+          <h3 class="box-title">VoltCycle: Segunda Vida de Celdas de Litio</h3>
+        </header>
+        <p class="box-summary">
+          Estudio experimental centrado en la caracterización, descarte y ensamblaje de módulos de almacenamiento eléctrico a partir de baterías en desuso provenientes de scooters y laptops. El prototipo incorpora un sistema de gestión inteligente de batería (BMS) que nivela dinámicamente el voltaje entre celdas heterogéneas.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Apunta a proveer bancos de energía de respaldo para laboratorios docentes y hogares vulnerables, evitando que residuos electrónicos de alto riesgo terminen en vertederos.</p>
+        </div>
+      </article>
+
+      <!-- Caja 6 -->
+      <article class="project-box">
+        <header class="box-header">
+          <span class="box-tag">Ciberseguridad de Redes</span>
+          <h3 class="box-title">NetShield IDS: Detección Distribuida contra Intrusiones</h3>
+        </header>
+        <p class="box-summary">
+          Sonda de monitoreo pasivo de tráfico de red concebida para detectar ataques de denegación de servicio (DDoS) y escaneo de puertos en tiempo real. Utiliza un motor de reglas heurísticas para aislar de forma automática direcciones IP sospechosas dentro de la subred del campus universitario.
+        </p>
+        <div class="box-details">
+          <h4>Contexto y Aplicación</h4>
+          <p>Responde a la necesidad de salvaguardar servidores de bases de datos académicas ante el incremento de intentos de acceso no autorizado, sin degradar el ancho de banda del campus.</p>
+        </div>
+      </article>
+
+    </section>
   </main>
 
+  <!-- Footer Institucional -->
   <footer class="site-footer">
-    <p>© 2026</p>
+    <p>&copy; 2026 Universidad Autónoma de Chile &bull; Feria de Innovación Tecnológica</p>
   </footer>
+
 </body>
 </html>
