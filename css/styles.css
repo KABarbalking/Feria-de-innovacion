@@ -1,38 +1,37 @@
-/* 1. Reseteo básico para que no haya márgenes raros */
+/*FORMATO BASE*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* El body ocupa el 100% del alto de la pantalla como mínimo */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fbf5f5; /* Fondo claro suave */
-  color: #2b1819;           /* Color del texto */
-  min-height: 100vh;        /* 100% de la altura visible */
-  display: flex;            /* Modo flexbox */
-  flex-direction: column;   /* Elementos apilados verticalmente */
+  background-color: #fcfcfc;
+  color: #2b2b2b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* El main se estira y empuja el footer hasta el fondo */
 main {
   flex: 1;
 }
 
-/* 2. Quitar el subrayado azul a los enlaces */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* 3. HEADER (Barra superior oscura) */
-.site-header {
-  background-color: #1a0a0c;
-  padding: 1rem 2rem;
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  border-bottom: 2px solid #DA291C;
 }
 
-.header-inner {
+.menu-contenedor {
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -40,38 +39,213 @@ a {
   align-items: center;
 }
 
-.site-logo {
-  font-size: 1.3rem;
+.logo-sitio {
+  font-size: 1.15rem;
+  font-weight: bold;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.site-logo span {
-  color: #c92a2a;
+.insignia-ua {
+  background-color: #DA291C;
+  color: #ffffff;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 800;
 }
 
-/* 4. NAVBAR (Menú) */
-.site-nav {
+.enlaces-navegacion {
   display: flex;
   gap: 1.5rem;
 }
 
-.site-nav a {
-  color: #e0d0d2;
+.enlaces-navegacion a {
+  color: #d1d1d1;
   font-size: 0.95rem;
+  font-weight: 500;
   padding-bottom: 4px;
+  transition: color 0.2s ease;
 }
 
-.site-nav a:hover,
-.site-nav a.active {
+.enlaces-navegacion a:hover,
+.enlaces-navegacion a.activo {
   color: #ffffff;
-  border-bottom: 2px solid #c92a2a;
+  border-bottom: 2px solid #DA291C;
 }
 
-/* 5. FOOTER (Siempre al fondo) */
-.site-footer {
-  background-color: #1a0a0c;
-  color: #c0b0b2;
+/* PORTADA CON FOTO */
+.portada {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('../img/feria.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 3.5rem 0;
+}
+
+.portada-contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ruta-pagina {
+  font-size: 0.8rem;
+  color: #d1d1d1;
+  margin-bottom: 0.5rem;
+}
+
+.portada h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.portada p {
+  color: #f0f0f0;
+  font-size: 1.05rem;
+}
+
+/* SECCION DE PROYECTOS */
+.contenedor-proyectos {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.grilla-proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.tarjeta-proyecto {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  padding: 1.8rem;
+  display: grid;
+  grid-template-columns: minmax(190px, 28%) minmax(0, 1fr);
+  column-gap: 1.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(218, 41, 28, 0.12);
+  border-color: #DA291C;
+}
+
+.tarjeta-imagen {
+  min-height: 210px;
+  margin: 0;
+  border-radius: 6px;
+  background-color: #fff8f7;
+  color: #a05b54;
+  display: grid;
+  place-items: center;
   text-align: center;
-  padding: 1.5rem;
   font-size: 0.9rem;
+  font-weight: 700;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.tarjeta-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 206px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tarjeta-encabezado {
+  margin-bottom: 1rem;
+  grid-column: 2;
+}
+
+.tarjeta-etiqueta {
+  display: inline-block;
+  background-color: #fdeae8;
+  color: #DA291C;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+}
+
+.tarjeta-titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.tarjeta-descripcion {
+  color: #444444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  grid-column: 2;
+}
+
+.tarjeta-contexto {
+  background-color: #faf7f7;
+  border-left: 3px solid #DA291C;
+  padding: 0.9rem 1rem;
+  border-radius: 0 4px 4px 0;
+  margin-top: auto;
+  grid-column: 2;
+}
+
+.tarjeta-contexto h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.tarjeta-contexto p {
+  color: #555555;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .tarjeta-proyecto {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .tarjeta-imagen,
+  .tarjeta-encabezado,
+  .tarjeta-descripcion,
+  .tarjeta-contexto {
+    grid-column: 1;
+  }
+
+  .tarjeta-imagen {
+    grid-row: auto;
+    min-height: 150px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-size: 0.9rem;
+  border-top: 3px solid #DA291C;
 }
