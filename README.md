@@ -23,4 +23,4 @@ Sitio web informativo desarrollado para la Feria de Innovación Tecnológica de 
 ## Distribución del trabajo
 * **Nicolas Olguin:** Creación de la estructura base del proyecto, configuración inicial del repositorio, desarrollo de la página de Inicio (`index.html`) y redacción del archivo README.md.
 * **SEBASTIÁN PÉREZ:** Desarrollo de la página de Contacto e Inscripción (`contacto.html`) y la página de Programa.
-* **BASTIÁN RAVILET:** Desarrollo de la página de Proyectos y diseño de la hoja de estilos personalizada (`css/styles.css`).
+* **BASTIÁN RAVILET:** Desarrollo de la página de Proyectos y diseño de la hoja de estilos personalizada (`css/styles.css`). 
