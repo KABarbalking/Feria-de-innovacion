@@ -171,6 +171,98 @@ a {
   white-space: nowrap;
 }
 
+/* Css contacto*/
+.contact-layout {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-info-card,
+.contact-form-card {
+  background-color: #ffffff;
+  border: 1px solid #f1dede;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.contact-info-card {
+  flex: 1;
+}
+
+.contact-form-card {
+  flex: 1.5;
+}
+
+.contact-info-card h3,
+.contact-form-card h3 {
+  color: #2b1819;
+  margin-bottom: 1rem;
+}
+
+.contact-channels {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.channel-label {
+  display: block;
+  font-weight: bold;
+  color: #2b1819;
+  font-size: 0.9rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.field-group label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #2b1819;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #e0d0d0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: #c92a2a;
+}
+
+.btn-primary {
+  background-color: #c92a2a;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+
+.btn-primary:hover {
+  background-color: #a82323;
+}
 /* Adaptación rápida a pantallas pequeñas */
 @media (max-width: 700px) {
   .schedule-item {
