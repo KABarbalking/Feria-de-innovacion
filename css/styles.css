@@ -1,4 +1,4 @@
-/* ================= 1. RESETEO BÁSICO ================= */
+/*FORMATO BASE*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,14 +23,14 @@ a {
   color: inherit;
 }
 
-/* ================= 2. NAVBAR OSCURO UA ================= */
-.site-header {
+/* Navbar */
+.navbar {
   background-color: #1a1a1a;
   padding: 1rem 0;
   border-bottom: 2px solid #DA291C;
 }
 
-.header-inner {
+.menu-contenedor {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
@@ -39,7 +39,7 @@ a {
   align-items: center;
 }
 
-.site-logo {
+.logo-sitio {
   font-size: 1.15rem;
   font-weight: bold;
   color: #ffffff;
@@ -48,7 +48,7 @@ a {
   gap: 0.5rem;
 }
 
-.badge-ua {
+.insignia-ua {
   background-color: #DA291C;
   color: #ffffff;
   padding: 0.2rem 0.45rem;
@@ -57,12 +57,12 @@ a {
   font-weight: 800;
 }
 
-.site-nav {
+.enlaces-navegacion {
   display: flex;
   gap: 1.5rem;
 }
 
-.site-nav a {
+.enlaces-navegacion a {
   color: #d1d1d1;
   font-size: 0.95rem;
   font-weight: 500;
@@ -70,14 +70,14 @@ a {
   transition: color 0.2s ease;
 }
 
-.site-nav a:hover,
-.site-nav a.active {
+.enlaces-navegacion a:hover,
+.enlaces-navegacion a.activo {
   color: #ffffff;
   border-bottom: 2px solid #DA291C;
 }
 
-/* ================= 3. HERO BANNER ================= */
-.hero-banner {
+/* PORTADA CON FOTO */
+.portada {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('../img/feria.jpg');
   background-size: cover;
   background-position: center;
@@ -85,64 +85,90 @@ a {
   padding: 3.5rem 0;
 }
 
-.hero-banner-inner {
+.portada-contenedor {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.breadcrumb-simple {
+.ruta-pagina {
   font-size: 0.8rem;
   color: #d1d1d1;
   margin-bottom: 0.5rem;
 }
 
-.hero-banner h2 {
+.portada h2 {
   font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
 }
 
-.hero-banner p {
+.portada p {
   color: #f0f0f0;
   font-size: 1.05rem;
 }
 
-/* ================= 4. SECCIÓN PROYECTOS / INVESTIGACIONES ================= */
-.container-proyectos {
+/* SECCION DE PROYECTOS */
+.contenedor-proyectos {
   width: 90%;
   max-width: 1100px;
   margin: 3rem auto;
 }
 
-.grid-investigaciones {
+.grilla-proyectos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
-.project-box {
+.tarjeta-proyecto {
   background-color: #ffffff;
   border-radius: 8px;
   border: 1px solid #e1e1e1;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   padding: 1.8rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(190px, 28%) minmax(0, 1fr);
+  column-gap: 1.8rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-box:hover {
+.tarjeta-proyecto:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(218, 41, 28, 0.12);
   border-color: #DA291C;
 }
 
-.box-header {
-  margin-bottom: 1rem;
+.tarjeta-imagen {
+  min-height: 210px;
+  margin: 0;
+  border-radius: 6px;
+  background-color: #fff8f7;
+  color: #a05b54;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  grid-column: 1;
+  grid-row: 1 / span 3;
 }
 
-.box-tag {
+.tarjeta-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 206px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tarjeta-encabezado {
+  margin-bottom: 1rem;
+  grid-column: 2;
+}
+
+.tarjeta-etiqueta {
   display: inline-block;
   background-color: #fdeae8;
   color: #DA291C;
@@ -155,29 +181,31 @@ a {
   margin-bottom: 0.6rem;
 }
 
-.box-title {
+.tarjeta-titulo {
   font-size: 1.3rem;
   font-weight: 700;
   color: #1a1a1a;
   line-height: 1.3;
 }
 
-.box-summary {
+.tarjeta-descripcion {
   color: #444444;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
+  grid-column: 2;
 }
 
-.box-details {
+.tarjeta-contexto {
   background-color: #faf7f7;
   border-left: 3px solid #DA291C;
   padding: 0.9rem 1rem;
   border-radius: 0 4px 4px 0;
   margin-top: auto;
+  grid-column: 2;
 }
 
-.box-details h4 {
+.tarjeta-contexto h4 {
   font-size: 0.85rem;
   text-transform: uppercase;
   color: #1a1a1a;
@@ -185,21 +213,35 @@ a {
   font-weight: 700;
 }
 
-.box-details p {
+.tarjeta-contexto p {
   color: #555555;
   font-size: 0.88rem;
   line-height: 1.5;
   margin: 0;
 }
 
+/* Responsivo para celulares */
 @media (max-width: 600px) {
-  .grid-investigaciones {
+  .tarjeta-proyecto {
     grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .tarjeta-imagen,
+  .tarjeta-encabezado,
+  .tarjeta-descripcion,
+  .tarjeta-contexto {
+    grid-column: 1;
+  }
+
+  .tarjeta-imagen {
+    grid-row: auto;
+    min-height: 150px;
   }
 }
 
-/* ================= 5. FOOTER INSTITUCIONAL ================= */
-.site-footer {
+/* Footer */
+.footer {
   background-color: #1a1a1a;
   color: #b0b0b0;
   text-align: center;
