@@ -82,6 +82,18 @@ a {
   border-bottom: 2px solid #DA291C;
 }
 
+.text-red {
+  color: #DA291C;
+}
+
+.divider-red {
+  width: 56px;
+  margin: 0.8rem auto 1.5rem;
+  border: 0;
+  border-top: 3px solid #DA291C;
+  opacity: 1;
+}
+
 /* PORTADA CON FOTO */
 .portada {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('../img/feria.jpg');
@@ -259,6 +271,12 @@ a {
    ESTILOS CRONOGRAMA (MÍNIMO Y EFECTIVO)
    ========================================================================== */
 
+.contenedor-programa {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
 /* Cabecera y fecha */
 .schedule-hero {
   text-align: center;
@@ -345,6 +363,12 @@ a {
 }
 
 /* Css contacto*/
+.contenedor-contacto {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
 .contact-layout {
   display: flex;
   gap: 2rem;
@@ -438,6 +462,10 @@ a {
 }
 /* Adaptación rápida a pantallas pequeñas */
 @media (max-width: 700px) {
+  .contact-layout {
+    flex-direction: column;
+  }
+
   .schedule-item {
     flex-direction: column;
     align-items: flex-start;
