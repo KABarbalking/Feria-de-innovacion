@@ -1,0 +1,77 @@
+/* 1. Reseteo básico para que no haya márgenes raros */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* El body ocupa el 100% del alto de la pantalla como mínimo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbf5f5; /* Fondo claro suave */
+  color: #2b1819;           /* Color del texto */
+  min-height: 100vh;        /* 100% de la altura visible */
+  display: flex;            /* Modo flexbox */
+  flex-direction: column;   /* Elementos apilados verticalmente */
+}
+
+/* El main se estira y empuja el footer hasta el fondo */
+main {
+  flex: 1;
+}
+
+/* 2. Quitar el subrayado azul a los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 3. HEADER (Barra superior oscura) */
+.site-header {
+  background-color: #1a0a0c;
+  padding: 1rem 2rem;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.site-logo span {
+  color: #c92a2a;
+}
+
+/* 4. NAVBAR (Menú) */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  color: #e0d0d2;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #c92a2a;
+}
+
+/* 5. FOOTER (Siempre al fondo) */
+.site-footer {
+  background-color: #1a0a0c;
+  color: #c0b0b2;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
