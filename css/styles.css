@@ -180,14 +180,3 @@ a {
   }
 }
 
-/* Responsivo para móviles */
-@media (max-width: 768px) {
-  .schedule-item {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    border-left-width: 5px;
-  }
-  .item-location {
-    align-self: flex-start;
-  }
-}
